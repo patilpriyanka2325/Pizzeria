@@ -12,6 +12,7 @@
         public bool Mushroom { get; set;}
         public bool Tuna { get; set;}
         public bool Chicken { get; set;}
+        public bool Pineapple { get; set; }
         public float FinalPrice { get; set;}
 
     }
