@@ -8,7 +8,7 @@ namespace Pizzeria.Pages.Checkout
     {
         public string PizzaName { get; set; }
         public float PizzaPrice { get; set; }
-        public string ImageTitle { get; set; }
+        public string ImageTittle { get; set; }
 
         public void OnGet()
         {
@@ -16,9 +16,9 @@ namespace Pizzeria.Pages.Checkout
             {
                 PizzaName = "Custom";
             }
-            if (string.IsNullOrEmpty(ImageTitle))
+            if (string.IsNullOrEmpty(ImageTittle))
             {
-                ImageTitle = "Create";
+                ImageTittle = "Create";
             }
         }
     }

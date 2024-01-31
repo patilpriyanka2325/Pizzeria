@@ -37,7 +37,10 @@
 
                     <div class="col-4 mb-5">
                         <img class="w-100" src="@imagePath" asp-append-version="true" />
-                        <a class="btn btn-primary mt-1" asp-area="" asp-page="Checkout/Checkout">Get this Pizza!</a>
+                        <a class="btn btn-primary mt-1" asp-area="" asp-page="Checkout/Checkout"
+                        asp-route-ImageTittle="@pizza.ImageTittle" 
+                        asp-route-PizzaPrice="@pizza.FinalPrice"
+                        asp-route-PizzaName="@pizza.PizzaName">Get this Pizza!</a>
                         <br />
                     </div>
                 }
